@@ -3,6 +3,7 @@ merge sorting 26.07.2019
  */
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class main {
@@ -20,19 +21,29 @@ public class main {
             System.out.print(arrayA[i] + " ");
         }
 
-     /* public int[] sortArray(int[] arrayA) {
-                if (arrayA == null) {
-                    System.out.println("Empty array");
-                    return null;
-                }
-                if (arrayA.length < 2) {
-                    return arrayA;
-                }
-                int[] arrayB = new int[arrayA.length / 2];
-                System.arraycopy(arrayA, 0, arrayB, 0, arrayA.length / 2);
 
-                return null;
-            }*/
+       /* if (arrayA == null) {
+            System.out.println("Empty array");
+            return null;
+        }
+        if (arrayA.length < 2) {
+            return arrayA;
+        }*/
+        int[] arrayB = new int[arrayA.length / 2];
+        System.arraycopy(arrayA, 0, arrayB, 0, arrayA.length / 2);
+        int[] arrayC = new int[arrayA.length - arrayA.length / 2];
+        System.arraycopy(arrayA, arrayA.length/2, arrayC, 0, arrayA.length - arrayA.length/2);
+
+        Arrays.sort(arrayB);
+        Arrays.sort(arrayC);
+        for (int i = 0; i < arrayA.length-1; i++) {
+            if ()
+        }
+
+
+
+
+
 
 
     }
