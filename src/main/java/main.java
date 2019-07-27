@@ -38,6 +38,7 @@ public class main {
         Arrays.sort(arrayC);
         for (int i = 0; i < arrayA.length-1; i++) {
             if ()
+                // merge 2 arrays into one
         }
 
 
