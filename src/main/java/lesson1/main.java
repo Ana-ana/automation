@@ -1,4 +1,4 @@
-/*
+package lesson1;/*
 merge sorting 26.07.2019
  */
 
@@ -8,18 +8,19 @@ public class main {
 
 
     public static void main(String[] args) {
-        int[] arrayA = new int[3];
+        int[] arrayA = new int[9];
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter numbers");
         for (int i = 0; i <= arrayA.length - 1; i++) {
             int number = scanner.nextInt();
             arrayA[i] = number;
-        }
+        }/*
         for (int i = 0; i <= arrayA.length - 1; i++) {
             System.out.print(arrayA[i] + " ");
-        }
-        sortArray(arrayA);
+        }*/
+        print(arrayA);
         //System.out.println(arrayA);
+        print(sortArray(arrayA));
     }
 
     public static int[] sortArray(int[] arrayA) {
@@ -41,24 +42,31 @@ public class main {
     }
 
 
-    public static int [] mergeArray(int [] arrayA, int [] arrayB) {
-        int [] arrayC = new int[arrayA.length + arrayB.length];
+    public static int[] mergeArray(int[] arrayA, int[] arrayB) {
+        int[] arrayC = new int[arrayA.length + arrayB.length];
         int positionA = 0, positionB = 0;
         for (int i = 0; i < arrayC.length; i++) {
-            if (positionA == arrayA.length){ // can't get into this if
-                arrayC[i] = arrayB[i - positionB];
+            if (positionA == arrayA.length) { // can't get into this if
+                arrayC[i] = arrayB[positionB];
                 positionB++;
             } else if (positionB == arrayB.length) {
-                arrayC[i] = arrayA[i - positionA];
+                arrayC[i] = arrayA[positionA];
                 positionA++;
-            } else if (arrayA[i - positionA] < arrayB[i - positionB]) {
-                arrayC[i] = arrayA[i - positionA];
+            } else if (arrayA[positionA] < arrayB[positionB]) {
+                arrayC[i] = arrayA[positionA];
+                positionA++;
+            } else { // b > a
+                arrayC[i] = arrayB[positionB];
                 positionB++;
-            } else {
-                arrayC[i] = arrayB[i - positionB];
-                positionA++;
             }
         }
         return arrayC;
+    }
+
+    public static void print(int[] arrayA) {
+        for (int i = 0; i < arrayA.length; i++) {
+            System.out.print(arrayA[i] + " ");
+        }
+        System.out.println(" ");
     }
 }
