@@ -45,6 +45,8 @@ public class Animal {
     }
     //empty constructor for cases when i don't know the name and age
     public Animal() {}
+
+
     public static void eat(String name, String food) {
         System.out.println(food + " - " + " любимая еда " + name);
     }
@@ -62,13 +64,13 @@ public class Animal {
 
     public static void main(String[] args) {
        Animal cat1 = new Animal("Барсик", 1995);
-        eat(cat1.animalName, "Вискас");
+      /*  eat(cat1.animalName, "Вискас");
        play(cat1.animalName, "tennis");
        Animal cat2 = new Animal();
       eat("Васька", "рыбка");
        getAge(cat2.animalName, cat2.wasBorn);
         cat2.setWasBorn(2015);
        cat2.setWasBorn(-1975);
-        System.out.println(cat2.wasBorn);
+        System.out.println(cat2.wasBorn);*/
     }
 }
