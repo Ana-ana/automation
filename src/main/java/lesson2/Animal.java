@@ -55,27 +55,20 @@ public class Animal {
         int curretYear = 2019;
         System.out.println(name + " " + (curretYear - wasBorn) + " лет от роду" );
     }
-    /*public static void voice (Animal, String sound){
-        System.out.println(Animal.);
-    }*/
-
-
+    public static void voice (String animalName, String sound){
+        System.out.println("Ты можешь слышать как " + animalName + " " + sound);
+    }
 
 
     public static void main(String[] args) {
        Animal cat1 = new Animal("Барсик", 1995);
         eat(cat1.animalName, "Вискас");
-
        play(cat1.animalName, "tennis");
-
        Animal cat2 = new Animal();
       eat("Васька", "рыбка");
        getAge(cat2.animalName, cat2.wasBorn);
         cat2.setWasBorn(2015);
        cat2.setWasBorn(-1975);
         System.out.println(cat2.wasBorn);
-
-
-
     }
 }
