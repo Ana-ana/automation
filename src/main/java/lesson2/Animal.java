@@ -3,30 +3,29 @@ package lesson2;
 public class Animal {
     // type of animal
 
-    private String animalName; //must be private to help me to restrict access to variable and to add limits
-    private String food;
-    private String game;
-    private int wasBorn;
+    protected String animalName; //must be private to help me to restrict access to variable and to add limits
+    protected String food; //available for this packeg and for the heirs
+    protected String game;
+    protected int wasBorn;
 
     public String getAnimalName() {
         return animalName;
     }
-    //added only getter cause wanted to let read only access to this variable
-    /*public void setAnimalName(String name) {
-        this.animalName = name;
-    }*/
+    //added only getter cause wanted to let  only reading access to this variable
     public String getFood() {
         return food;
     }
     public void setFood(String food) {
         this.food = food;
     }
+
     public String getGame() {
         return game;
     }
     public void setGame(String game) {
         this.game = game;
     }
+
     public int getwasBorn() {
         return wasBorn;
     }
@@ -64,7 +63,8 @@ public class Animal {
 
     public static void main(String[] args) {
        Animal cat1 = new Animal("Барсик", 1995);
-      /*  eat(cat1.animalName, "Вискас");
+       eat(cat1.animalName, "Вискас");
+      /*
        play(cat1.animalName, "tennis");
        Animal cat2 = new Animal();
       eat("Васька", "рыбка");
