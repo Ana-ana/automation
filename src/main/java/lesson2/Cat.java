@@ -7,6 +7,11 @@ public class Cat extends Animal {
     protected String game;
     protected int wasBorn;
 
+    public Cat() {}
+    public Cat(String animalName, String food) {
+        this.animalName = animalName;
+        this.food = food;
+    }
     public Cat(String animalName, String food, String game, int wasBorn, boolean mur) {
         this.animalName = animalName;
         this.food = food;
