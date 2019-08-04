@@ -7,8 +7,8 @@ public class Dog extends Animal {
         this.rrrrrr = rrrrrr;
     }
     public boolean getRrrrrr() { return rrrrrr;}
-
-      public Dog( String animalName, boolean rrrrrr){
+    public Dog() {};  // default constructor
+      public Dog(String animalName, boolean rrrrrr){
             this.animalName = animalName;
             this.rrrrrr = rrrrrr;
       }
@@ -26,5 +26,4 @@ public class Dog extends Animal {
         dog.setRrrrrr(false);
         guard(dog.animalName, dog.rrrrrr);
     }
-
 }

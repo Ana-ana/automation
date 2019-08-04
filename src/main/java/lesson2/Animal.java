@@ -38,12 +38,12 @@ public class Animal {
     }
     //constructor with necessary fields for the object
     //constructor doesn't returning type and has name of the class with big letter
-    public Animal(String animalName, int wasBorn) {
+    protected Animal(String animalName, int wasBorn) {
         this.animalName = animalName;
         this.wasBorn = wasBorn;
     }
     //empty constructor for cases when i don't know the name and age
-    public Animal() {}
+    protected Animal() {}
 
 
     public static void eat(String name, String food) {
