@@ -1,31 +1,26 @@
 package lesson2;
 
 public class Animal {
-    // type of animal
-
-    protected String animalName; //must be private to help me to restrict access to variable and to add limits
-    protected String food; //available for this packeg and for the heirs
-    protected String game;
-    protected int wasBorn;
+    private String animalName;
+    private String food; //available for this packeg and for the heirs
+    private String game;
+    private int wasBorn;
 
     public String getAnimalName() {
         return animalName;
     }
-    //added only getter cause wanted to let  only reading access to this variable
     public String getFood() {
         return food;
     }
     public void setFood(String food) {
         this.food = food;
     }
-
     public String getGame() {
         return game;
     }
     public void setGame(String game) {
         this.game = game;
     }
-
     public int getwasBorn() {
         return wasBorn;
     }
@@ -36,16 +31,22 @@ public class Animal {
             System.out.println("The year of birth cannot not be negative");
         }
     }
-    //constructor with necessary fields for the object
-    //constructor doesn't returning type and has name of the class with big letter
-    protected Animal(String animalName, int wasBorn) {
+
+    //constructors
+    public Animal(String animalName){
+        this.animalName = animalName;
+    }
+    public Animal(String animalName, String food) {
+        this.animalName = animalName;
+        this.food = food;
+    }
+
+    public Animal(String animalName, int wasBorn) {
         this.animalName = animalName;
         this.wasBorn = wasBorn;
     }
-    //empty constructor for cases when i don't know the name and age
-    protected Animal() {}
 
-
+    //methods
     public static void eat(String name, String food) {
         System.out.println(food + " - " + " любимая еда " + name);
     }

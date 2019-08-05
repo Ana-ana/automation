@@ -7,9 +7,11 @@ public class Dog extends Animal {
         this.rrrrrr = rrrrrr;
     }
     public boolean getRrrrrr() { return rrrrrr;}
-    public Dog() {};  // default constructor
-      public Dog(String animalName, boolean rrrrrr){
-            this.animalName = animalName;
+    public Dog(String animalName) {
+        super(animalName);
+    }
+    public Dog(String animalName, boolean rrrrrr){
+            super(animalName);
             this.rrrrrr = rrrrrr;
       }
 
@@ -20,10 +22,10 @@ public class Dog extends Animal {
 
     public static void main(String[] args) {
         Dog dog = new Dog("Тузик", false);
-        eat(dog.animalName, "косточки");// method from super class
+        eat(dog.getAnimalName(), "косточки");// method from super class
         dog.setRrrrrr(true);
-        guard(dog.animalName, dog.rrrrrr);
+        guard(dog.getAnimalName(), dog.rrrrrr);
         dog.setRrrrrr(false);
-        guard(dog.animalName, dog.rrrrrr);
+        guard(dog.getAnimalName(), dog.rrrrrr);
     }
 }
