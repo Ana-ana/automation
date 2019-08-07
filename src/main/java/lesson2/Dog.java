@@ -21,7 +21,7 @@ public class Dog extends Animal {
     }
     @Override
     public void voice (String animalName, String sound){
-        System.out.println(animalName + "обычно гавкают"+ sound);
+        System.out.println(animalName + " обычно гавкает "+ sound);
     }
 
     public static void main(String[] args) {
@@ -31,5 +31,6 @@ public class Dog extends Animal {
         guard(dog.getAnimalName(), dog.rrrrrr);
         dog.setRrrrrr(false);
         guard(dog.getAnimalName(), dog.rrrrrr);
+        dog.voice(dog.getAnimalName(), "gav-gav");
     }
 }
