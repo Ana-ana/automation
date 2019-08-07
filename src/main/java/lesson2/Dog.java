@@ -7,9 +7,9 @@ public class Dog extends Animal {
         this.rrrrrr = rrrrrr;
     }
     public boolean getRrrrrr() { return rrrrrr;}
-    /*public Dog(String animalName) {
+    public Dog(String animalName) {
         super(animalName);
-    }*/
+    }
     public Dog(String animalName, boolean rrrrrr){
             super(animalName);
             this.rrrrrr = rrrrrr;
@@ -18,6 +18,10 @@ public class Dog extends Animal {
     public static void guard(String animalName, boolean rrrrrr){
         String guardiness = (rrrrrr == true) ? animalName +" охраняет тебя" : "фиг тебе, а не охрана, корми лучше ";
         System.out.println(guardiness);
+    }
+    @Override
+    public void voice (String animalName, String sound){
+        System.out.println(animalName + "обычно гавкают"+ sound);
     }
 
     public static void main(String[] args) {

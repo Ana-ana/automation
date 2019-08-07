@@ -61,14 +61,18 @@ public class Animal {
         int curretYear = 2019;
         System.out.println(name + " " + (curretYear - wasBorn) + " лет от роду" );
     }
-    public static void voice (String animalName, String sound){
+    public void voice (String animalName, String sound){
         System.out.println("Ты можешь слышать как " + animalName + " " + sound);
     }
+    public static void voice(String animalName, String sound, String game) {
+        System.out.println(animalName + " играет в "+ game+" и "+ sound);
+    } // Polymorphism - overload
 
 
     public static void main(String[] args) {
        Animal cat1 = new Animal("Барсик", 1995);
        eat(cat1.animalName, "Вискас");
+       cat1.voice(cat1.animalName, "rei");
       /*
        play(cat1.animalName, "tennis");
        Animal cat2 = new Animal();
