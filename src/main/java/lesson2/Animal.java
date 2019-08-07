@@ -1,5 +1,9 @@
 package lesson2;
 
+/*
+    homework for 2 and 3td lessons
+ */
+
 public class Animal {
     private String animalName;
     private String food; //available for this packeg and for the heirs

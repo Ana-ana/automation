@@ -7,7 +7,7 @@ public class PocketDog extends Dog {
     public int getWeight() {return weight;}
 
     public PocketDog(String animalName, int weight) {
-        super(animalName);
+        Animal(animalName);
         this.weight = weight;
     }
     public static void realyPocket(String animalName, int weight){

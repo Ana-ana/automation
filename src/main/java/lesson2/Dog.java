@@ -7,9 +7,9 @@ public class Dog extends Animal {
         this.rrrrrr = rrrrrr;
     }
     public boolean getRrrrrr() { return rrrrrr;}
-    public Dog(String animalName) {
+    /*public Dog(String animalName) {
         super(animalName);
-    }
+    }*/
     public Dog(String animalName, boolean rrrrrr){
             super(animalName);
             this.rrrrrr = rrrrrr;
