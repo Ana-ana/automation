@@ -12,6 +12,6 @@ public class Human implements Swimmable, eat {
         Human man = new Human();
         man.swim();
         man.eat();
-        man.move();
+        //man.move();
     }
 }

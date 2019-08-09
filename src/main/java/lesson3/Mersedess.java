@@ -11,12 +11,12 @@ public class Mersedess extends Car {
 
     @Override
     public void move() {
-        System.out.println("ну поехали уже");
+        System.out.println("ну поехали уже " + getColor() + " "+getModel());
     }
 
     @Override
     public void brake() {
-        System.out.println("Тормози!");
+        System.out.println("Тормози! " + getModel());
     }
     public Mersedess(String model, String color, boolean myMersedess) {
         super(model, color);
@@ -24,7 +24,9 @@ public class Mersedess extends Car {
     }
 
     public static void main(String[] args) {
-        Mersedess mers = new Mersedess("E", "red", true);
+        Mersedess mers = new Mersedess("Моделюшка", "red", true);
+        mers.move();
+        mers.brake();
 
     }
 }
