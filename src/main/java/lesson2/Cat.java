@@ -19,6 +19,8 @@ public class Cat extends Animal {
             System.out.println("Не дождать тебе притственного мурррра");
         }
     }
+    public Cat() {
+    }
 
 
     public static void main(String[] args) {
@@ -26,6 +28,7 @@ public class Cat extends Animal {
     System.out.println(barsik.getAnimalName());
     eat(barsik.getAnimalName(), "еда для барсика");
     catMur(barsik.getAnimalName(), barsik.mur);
+
 }
 
 }

@@ -49,6 +49,8 @@ public class Animal {
         this.animalName = animalName;
         this.wasBorn = wasBorn;
     }
+    public Animal() {};
+
 
     //methods
     public static void eat(String name, String food) {
