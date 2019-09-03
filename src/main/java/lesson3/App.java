@@ -1,7 +1,10 @@
 package lesson3;
 
+import Lesson4.Frogs;
 import Utils.Colors;
 
+import static Utils.Colors.ANSI_BLUE;
+import static Utils.Colors.ANSI_YELLOW;
 import static Utils.Print.print;
 public class App {
      Car myCar = new Car("Mers", "green") {
@@ -22,9 +25,17 @@ public class App {
 
     };
     public static void main(String[] args) {
-        String s = "hjknkj";
-        print(Colors.ANSI_YELLOW, s);
+
+        Frogs fr = new Frogs("fr1", 3);
+        Frogs fr2 = new Frogs("fr2", 4);
+
+        print(ANSI_YELLOW, fr);
+        print(ANSI_BLUE, fr2);
+
     }
+
+
+
 
 }
 

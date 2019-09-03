@@ -2,14 +2,21 @@ package lesson2;
 
 public class Cat extends Animal {
     private boolean mur;
+    private static int catsQTY = 0;
+
+    public static int getCatsQTY() {
+        return catsQTY;
+    }
 
     public Cat(String animalName, String food, boolean mur) {
         super(animalName, food);
         this.mur = mur;
+        catsQTY++;
     }
     public Cat(String animalName, int wasBorn, boolean mur) {
         super(animalName, wasBorn);
         this.mur = mur;
+        catsQTY++;
     }
 
     public static void catMur(String animalName, boolean mur){
@@ -20,14 +27,17 @@ public class Cat extends Animal {
         }
     }
     public Cat() {
+        catsQTY++;
     }
 
 
     public static void main(String[] args) {
     Cat barsik = new Cat("BarsikSName", 1078, true);
+    Cat barsik2 = new Cat("BarsikSName", 1078, true);
     System.out.println(barsik.getAnimalName());
     eat(barsik.getAnimalName(), "еда для барсика");
     catMur(barsik.getAnimalName(), barsik.mur);
+        System.out.println(getCatsQTY());
 
 }
 
