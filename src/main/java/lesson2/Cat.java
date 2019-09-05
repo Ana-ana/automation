@@ -8,6 +8,10 @@ public class Cat extends Animal {
         return catsQTY;
     }
 
+    public boolean isMur() {
+        return mur;
+    }
+
     public Cat(String animalName, String food, boolean mur) {
         super(animalName, food);
         this.mur = mur;
@@ -16,19 +20,26 @@ public class Cat extends Animal {
     public Cat(String animalName, int wasBorn, boolean mur) {
         super(animalName, wasBorn);
         this.mur = mur;
-        catsQTY++;
+    }
+    public Cat() {
     }
 
     public static void catMur(String animalName, boolean mur){
         if (mur == true) {
-            System.out.println(animalName + " мурлыкает");
+            System.out.println(animalName + " мурлыкает из метода класса Cat");
         } else {
             System.out.println("Не дождать тебе притственного мурррра");
         }
     }
-    public Cat() {
-        catsQTY++;
+    //Overload
+    public static void catMur(String animalName, boolean mur, String food){
+        if (mur == true) {
+            System.out.println(animalName + " мурлыкает из метода класса Cat когда ест "+food);
+        } else {
+            System.out.println("Не дождать тебе притственного мурррра");
+        }
     }
+
 
 
     public static void main(String[] args) {
