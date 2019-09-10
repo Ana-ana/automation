@@ -15,6 +15,15 @@ public class Kitty extends Cat {
        }
 
    }
+   @Override
+    public Kitty getCat(Cat cat) {
+        return new Kitty("hjj", 1899, true);
+    }
+    /*public Animal getCat(Cat cat) {
+        return new Animal();
+    }*/
+
+
     public static void main(String[] args) {
         Kitty kitty = new Kitty("rjntyjxtr", 2005, true);
         Cat myCat = new Cat("fg", "food", true);

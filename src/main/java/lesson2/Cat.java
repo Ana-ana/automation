@@ -39,6 +39,9 @@ public class Cat extends Animal {
             System.out.println("Не дождать тебе притственного мурррра");
         }
     }
+    public Cat getCat(Cat cat) {
+        return cat;
+    }
 
 
 
