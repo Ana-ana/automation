@@ -1,6 +1,6 @@
 package lesson3;
 
-import Lesson4.Frogs;
+//import Lesson4.Frogs;
 import Utils.Colors;
 
 import static Utils.Colors.ANSI_BLUE;
@@ -26,11 +26,13 @@ public class App {
     };
     public static void main(String[] args) {
 
-        Frogs fr = new Frogs("fr1", 3);
-        Frogs fr2 = new Frogs("fr2", 4);
+//        Frogs fr = new Frogs("fr1", 3);
+//        Frogs fr2 = new Frogs("fr2", 4);
+/*
 
         print(ANSI_YELLOW, fr);
         print(ANSI_BLUE, fr2);
+*/
 
     }
 
