@@ -1,5 +1,7 @@
 package Overriding;
 
+import LessonExeption.RerectangleArea;
+
 public class Rectangle extends Figure {
     private int d;
 
