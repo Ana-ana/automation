@@ -8,7 +8,7 @@ public class RerectangleArea {
         if (a >0 && b>0) {
             int c = 0;
             c = a * b;
-        } else  throw new MyExeption("a or b is less then 1"){
+        } else  throw new MyExeption(){
 
         };
         return a*b;

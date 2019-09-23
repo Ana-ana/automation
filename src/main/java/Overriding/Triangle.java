@@ -8,8 +8,8 @@ public class Triangle extends Figure {
         super(a, b, c);
     }
 
-    @Override
-    public void square(Figure triangle) {
+
+    public static void square(Figure triangle) {
         System.out.println(triangle.a*triangle.b*triangle.c);
     }
 }

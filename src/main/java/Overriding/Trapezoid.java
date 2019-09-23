@@ -10,9 +10,9 @@ public class Trapezoid extends Figure {
         this.widght = widght;
     }
 
-    @Override
-    public void square(Figure figure) {
-        System.out.println(a*b);
+
+    public static void square(Figure figure) {
+        //System.out.println(a*b);
     }
 
     public void square(Trapezoid figure){

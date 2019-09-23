@@ -1,12 +1,14 @@
 package LessonExeption;
 
-public class MyExeption extends Exception {
+public class MyExeption extends RuntimeException {
    // int a = 1;
     private String message = "Ты совершил ошибку, чувак! Числа отрицательны";
 
     public MyExeption(String message) {
         this.message=message;
 
+    }
+    public MyExeption(){
     }
 
     @Override

@@ -11,7 +11,7 @@ public abstract class Figure{
         this.c = c;
     }
 
-    public void square(Figure figure) {
+    public static void square(Figure figure) {
     }
 
 

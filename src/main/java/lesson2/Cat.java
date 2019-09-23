@@ -3,6 +3,8 @@ package lesson2;
 public class Cat extends Animal {
     private boolean mur;
     private static int catsQTY = 0;
+    public String string;
+
 
     public static int getCatsQTY() {
         return catsQTY;
