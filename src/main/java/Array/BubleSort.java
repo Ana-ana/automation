@@ -2,16 +2,20 @@ package Array;
 
 public class BubleSort {
 
-    public static int[] bubleSort(int[] a){
-        int temp = 0;
-        for (int i = 0; i < a.length-1; i++) {
-            if (a[i] > a[i+1]) {
-                temp = a[i];
-                a[i] = a[i+1];
-                a[i+1] = temp;
-                i--;
+    public static int[] bubleSort(int[] a) {
+        for (int y = 0; y < a.length - 1; y++) {
+            int temp = 0;
+            for (int i = 0; i < a.length - 1; i++) {
+                if (a[i] > a[i + 1]) {
+                    temp = a[i];
+                    a[i] = a[i + 1];
+                    a[i + 1] = temp;
+                    i--;
+                }
             }
-        } return a;
+
+        }
+        return a;
     }
 
     public static void printArray(int[] a){
