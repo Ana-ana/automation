@@ -11,8 +11,13 @@ public class App {
         System.out.println("_______________");
         System.out.println("Buble sorting");
         int[] array = new int[]{1, 10, 4, 98, 2,8,4, 9, 3};
-        bubleSort(array).toString();
-        printArray(array);
+        int[] hugeArray = new int[1000];
+        for (int i = 0; i < hugeArray.length-1 ; i++) {
+            hugeArray[i] = (int) Math.round(Math.random() * 1000);
+        }
+
+        bubleSort(hugeArray);
+        printArray(hugeArray);
 
         System.out.println("_______________");
         System.out.println("Select sorting");
