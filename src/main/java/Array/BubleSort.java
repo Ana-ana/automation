@@ -10,6 +10,7 @@ public class BubleSort {
                     temp = a[i];
                     a[i] = a[i + 1];
                     a[i + 1] = temp;
+                    //exchange(a[i], a[i+1]);
                     i--;
                 }
             }
@@ -17,6 +18,13 @@ public class BubleSort {
         }
         return a;
     }
+
+//    public static int exchange(int a, int b){
+//        int t =a;
+//        a = b;
+//        b = t;
+//        return a & b;
+//    } this method doesn't change numbers in my array. Why?
 
     public static void printArray(int[] a){
         for (int i = 0; i < a.length; i++) {
