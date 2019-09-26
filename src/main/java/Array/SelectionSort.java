@@ -7,9 +7,6 @@ import java.util.Arrays;
 public class SelectionSort {
 
     public static int[] selectSort(int[] a) {
-
-     //   int minValue = a[0];
-      //  int temp;
         for (int i = 0; i < a.length-1; i++) {
             int minIndex = i;
             for (int y = i; y < a.length; y++) {
@@ -23,8 +20,6 @@ public class SelectionSort {
                 a[minIndex] = temp;
 
             }
-
-
         }
         return a;
     }
