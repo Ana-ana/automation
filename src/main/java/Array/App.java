@@ -4,6 +4,7 @@ package Array;
 import static Array.BubleSort.bubleSort;
 import static Array.BubleSort.printArray;
 import static Array.SelectionSort.*;
+import static Array.InsertingSort.insertSorting;
 
 public class App {
 
@@ -24,6 +25,12 @@ public class App {
         int[] arrayS = new int[]{20, 10, 4, 98, 2,8,4, 9, 3};
         selectSort(arrayS);
         printArray(arrayS);
+        System.out.println("");
+
+        System.out.println("_______________");
+        System.out.println("Insert sorting");
+        insertSorting(array);
+        printArray(array);
 
 
     }
