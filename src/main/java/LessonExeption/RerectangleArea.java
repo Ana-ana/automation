@@ -8,9 +8,7 @@ public class RerectangleArea {
         if (a >0 && b>0) {
             int c = 0;
             c = a * b;
-        } else  throw new MyExeption(){
-
-        };
+        } else  throw new MyExeption("Ты совершил ошибку, чувак! Числа отрицательны") {};
         return a*b;
     }
 }
